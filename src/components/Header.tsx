@@ -4,7 +4,7 @@ import { Session } from "next-auth";
 import { signIn, signOut } from "next-auth/react";
 import React from "react";
 
-export default function Header({ session }: { session: Session | null }) {
+const Header = ({ session }: { session: Session | null }) => {
   console.log(session);
   return (
     <header id="header" className="flex items-center h-14 w-full bg-red-400">
@@ -19,4 +19,6 @@ export default function Header({ session }: { session: Session | null }) {
       </nav>
     </header>
   );
-}
+};
+
+export default Header;
