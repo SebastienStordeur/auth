@@ -2,7 +2,6 @@
 
 import { Session } from "next-auth";
 import { signIn, signOut } from "next-auth/react";
-import React from "react";
 
 const Header = ({ session }: { session: Session | null }) => {
   console.log(session);
